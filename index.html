@@ -48,13 +48,12 @@
     <h1><a href="http://github.com/cyberfox/greed">greed</a> 
       <span class="small">by <a href="http://github.com/cyberfox">cyberfox</a></small></h1>
 
-    <div class="description">
-      An extremely simple Google Reader API using HTTParty.
-    </div>
-
-    <p><h2>A very simple Google Reader API using HTTParty.</h2>
-
-This differs from <a href="http://github.com/jnunemaker/googlereader">jnunemaker’s API</a> in that authentication is contained within the object, and the various api methods are called on the object, not on the module/class itself. This is just my preferred way of building an API.<br/>
+    <p><h2>A very simple Google Reader API using <a href="http://github.com/jnunemaker/httparty">HTTParty</a>.</h2>
+This differs from
+<a href="http://github.com/jnunemaker/googlereader">jnunemaker’s own API</a>
+in that authentication is contained within the object, and the
+various api methods are called on the object, not on the module/class
+itself. This is just my preferred way of building an API.<br/>
 <br/>
 This library uses HTTParty which simplifies the entire process greatly.<br/>
 <br/>
@@ -69,12 +68,19 @@ This is incomplete at present, but it’s at a nice checkpointable stage.<br/>
 <p>httparty >= 0.2.4</p>
 <h2>Install</h2>
 <p>Put google_reader.rb in your load_path and
-<pre><code>require 'google_reader'</code></pre>
+<pre><code>require 'google_reader'
+
+g = GoogleReader.new(username, password)
+
+g.unread_count
+g.unread
+{...etc...}
+</code></pre>
 </p>
 <h2>License</h2>
-<p><blockquote>Do what thou wilt shall be the whole of the law.</blockquote></p>
+<p><blockquote>Do what thou wilt shall be the whole of the Law.</blockquote></p>
 <h2>Authors</h2>
-<p>Morgan Schweers (cyberfox@gmail.com)<br/><br/>      </p>
+<p><blockquote>Morgan Schweers (cyberfox@gmail.com)</blockquote></p>
 
     <h2>Download</h2>
     <p>
