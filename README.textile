@@ -1,0 +1,19 @@
+h2. A very simple Google Reader API using "HTTParty":http://github.com/jnunemaker/httparty.
+
+This differs from "jnunemaker's API":http://github.com/jnunemaker/googlereader in that authentication is contained
+within the object, and the various api methods are called on the
+object, not on the module/class itself.  This is just my preferred way
+of building an API.
+
+This library also uses HTTParty (0.2.4 or greater required due to a
+"bug in earlier versions":http://github.com/jnunemaker/httparty/commit/e73bdb92a5c68dc8d049a4d3799a0807019a6c2e which failed the parse), which simplifies the
+entire process greatly.
+
+I also am trying to support the exclude functionality that is extra undocumented.  :)
+
+This is incomplete at present, and the Google Reader API is completely
+undocumented, but it's at a nice checkpointable stage.
+
+*_Thus this code could break at any moment._*
+
+--  Morgan Schweers

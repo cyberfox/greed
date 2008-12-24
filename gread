@@ -1,0 +1,18 @@
+#!/bin/env ruby
+require 'google_reader'
+require 'pp'
+
+if ARGV.length == 2
+  username = "#{ARGV[0]}@gmail.com"
+  password = ARGV[1]
+else
+  puts "Usage:\n\tgread {username} {password}\n(Leave off the @gmail.com)"
+  exit
+end
+
+g = GoogleReader.new(username, password)
+#pp g.starred
+#pp g.label('my-projects', 'user/-/label/search')
+#pp g.followed
+pp g.unread_count
+pp g.unread
