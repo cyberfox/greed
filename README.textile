@@ -11,9 +11,8 @@ entire process greatly.
 
 I also am trying to support the exclude functionality that is extra undocumented.  :)
 
-This is incomplete at present, and the Google Reader API is completely
-undocumented, but it's at a nice checkpointable stage.
+This is incomplete at present, but it's at a nice checkpointable stage.
 
-*_Thus this code could break at any moment._*
+*_The Google Reader API is completely undocumented, thus this code could break at any moment._*
 
 --  Morgan Schweers
